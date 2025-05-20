@@ -1,0 +1,111 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #3498DB;
+    --secondary-color: #2ECC71;
+    --background-color: #F4F4F4;
+    --text-color: #333;
+    --light-text: #666;
+}
+
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Error Container Styles */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.error-wrapper {
+    text-align: center;
+    max-width: 600px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.error-illustration img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.error-title {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.error-description {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-bottom: 25px;
+}
+
+/* Button Styles */
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980B9;
+}
+
+.btn-secondary {
+    background-color: #ECF0F1;
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #E0E0E0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .error-wrapper {
+        padding: 20px;
+    }
+
+    .error-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
